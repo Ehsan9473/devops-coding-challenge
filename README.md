@@ -1,5 +1,5 @@
 # devops-coding-challenge
-## Steps to do the Project
+## Steps of the Project
 1. **Provision the PostgreSQL Database**:
    ```bash
    cd terraform
