@@ -26,12 +26,13 @@ kubectl get services
 curl http://<Minikube-IP>:<NodePort>/
 
 6. ## Monitoring and Alerting with Prometheus and Grafana
-**Installing Prometheus
+# Installing Prometheus
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 kubectl create namespace monitoring
 helm install prometheus prometheus-community/prometheus --namespace monitoring -f kubernetes/monitoring/values.yaml
-**Installing Grafana
+
+# Installing Grafana
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 helm install grafana grafana/grafana --namespace monitoring
