@@ -3,7 +3,7 @@ This project implements a CI/CD pipeline for deploying a web application with a 
 
 ## Steps of the Project
 
-1. **Provision the PostgreSQL Database**:
+1. **Provisioning the PostgreSQL Database**:
    ```bash
    cd terraform
    terraform init
@@ -14,15 +14,15 @@ cd ../kubernetes
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 
-3. ## Create the Kubernetes Secret
+3. ## Creation of the Kubernetes Secret
 cd ../scripts
 ./create-secret.sh
 
-4. ## Verify the deployment
+4. ## Deployment verification
 kubectl get pods
 kubectl get services
 
-5. ## Access the Health Endpoint
+5. ## Accessing the Health Endpoint
 curl http://<Minikube-IP>:<NodePort>/
 
 6. ## Monitoring and Alerting with Prometheus and Grafana
