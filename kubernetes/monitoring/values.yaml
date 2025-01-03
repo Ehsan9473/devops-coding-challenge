@@ -4,4 +4,4 @@ prometheus:
       - url: https://prometheus-prod-24-prod-eu-west-2.grafana.net/api/prom/push
         basicAuth:
           username: sa-1-minikube-prometheus
-          password: <YOUR_API_KEY>
+          password: <Grafana_Api_Key>
